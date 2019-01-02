@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>异常捕获 | Flask框架</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day01/yi-chang-zhu-dong-pao-chu.html" />
+    
+    
+    <link rel="prev" href="../day01/lu-you-de-ge-zhong-ding-yi.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.6"
+        data-chapter-title="异常捕获"
+        data-filepath="day01/yi-chang-bu-huo.md"
+        data-basepath=".."
+        data-revision="Tue Jul 03 2018 02:15:35 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Flask框架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="day01/index.html">
+            
+                
+                    <a href="../day01/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        视图及路由
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="day01/flaskjian-jie.html">
+            
+                
+                    <a href="../day01/flaskjian-jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Flask简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01/flaskhuan-jing-an-zhuang.html">
+            
+                
+                    <a href="../day01/flaskhuan-jing-an-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        虚拟环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day01/helloworld.html">
+            
+                
+                    <a href="../day01/helloworld.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        HelloWorld
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day01/xiang-guan-pei-zhi-can-shu.html">
+            
+                
+                    <a href="../day01/xiang-guan-pei-zhi-can-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        相关配置参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day01/lu-you-de-ge-zhong-ding-yi.html">
+            
+                
+                    <a href="../day01/lu-you-de-ge-zhong-ding-yi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        路由基本定义
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="day01/yi-chang-bu-huo.html">
+            
+                
+                    <a href="../day01/yi-chang-bu-huo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        异常捕获
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="day01/yi-chang-zhu-dong-pao-chu.html">
+            
+                
+                    <a href="../day01/yi-chang-zhu-dong-pao-chu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        异常主动抛出
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="day01/shi-tu-chang-yong-luo-ji.html">
+            
+                
+                    <a href="../day01/shi-tu-chang-yong-luo-ji.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        视图常用逻辑
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="day01/qing-qiu-gou-zi.html">
+            
+                
+                    <a href="../day01/qing-qiu-gou-zi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        请求勾子
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Flask框架</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5F02;&#x5E38;&#x6355;&#x83B7;">&#x5F02;&#x5E38;&#x6355;&#x83B7;</h1>
+<ul>
+<li>errorhandler &#x88C5;&#x9970;&#x5668;<ul>
+<li>&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x5F53;&#x7A0B;&#x5E8F;&#x629B;&#x51FA;&#x6307;&#x5B9A;&#x9519;&#x8BEF;&#x72B6;&#x6001;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x8BE5;&#x88C5;&#x9970;&#x5668;&#x6240;&#x88C5;&#x9970;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+</li>
+<li>&#x53C2;&#x6570;&#xFF1A;<ul>
+<li>code_or_exception &#x2013; HTTP&#x7684;&#x9519;&#x8BEF;&#x72B6;&#x6001;&#x7801;&#x6216;&#x6307;&#x5B9A;&#x5F02;&#x5E38;</li>
+</ul>
+</li>
+<li>&#x4F8B;&#x5982;&#x7EDF;&#x4E00;&#x5904;&#x7406;&#x72B6;&#x6001;&#x7801;&#x4E3A;500&#x7684;&#x9519;&#x8BEF;&#x7ED9;&#x7528;&#x6237;&#x53CB;&#x597D;&#x7684;&#x63D0;&#x793A;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-decorator">@app.errorhandler(500)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">internal_server_error</span><span class="hljs-params">(e)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&#x670D;&#x52A1;&#x5668;&#x642C;&#x5BB6;&#x4E86;&apos;</span>
+</code></pre>
+<ul>
+<li>&#x6355;&#x83B7;&#x6307;&#x5B9A;&#x5F02;&#x5E38;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-decorator">@app.errorhandler(ZeroDivisionError)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">zero_division_error</span><span class="hljs-params">(e)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&#x9664;&#x6570;&#x4E0D;&#x80FD;&#x4E3A;0&apos;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day01/lu-you-de-ge-zhong-ding-yi.html" class="navigation navigation-prev " aria-label="Previous page: 路由基本定义"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day01/yi-chang-zhu-dong-pao-chu.html" class="navigation navigation-next " aria-label="Next page: 异常主动抛出"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
